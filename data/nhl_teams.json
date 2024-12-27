@@ -1,0 +1,89 @@
+{
+    "teams": [
+        {
+            "id": 1,
+            "name": "Devils",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
+        },
+        {
+            "id": 3,
+            "name": "Rangers",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+        },
+        {
+            "id": 4,
+            "name": "Flyers",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+        },
+        {
+            "id": 5,
+            "name": "Penguins",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
+        },
+        {
+            "id": 6,
+            "name": "Bruins",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+        },
+        {
+            "id": 7,
+            "name": "Sabres",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+        },
+        {
+            "id": 8,
+            "name": "Canadiens",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+        },
+        {
+            "id": 10,
+            "name": "Maple Leafs",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+        },
+        {
+            "id": 12,
+            "name": "Hurricanes",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+        },
+        {
+            "id": 13,
+            "name": "Panthers",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+        },
+        {
+            "id": 14,
+            "name": "Lightning",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+        },
+        {
+            "id": 15,
+            "name": "Capitals",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg"
+        },
+        {
+            "id": 17,
+            "name": "Red Wings",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg"
+        },
+        {
+            "id": 23,
+            "name": "Canucks",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+        },
+        {
+            "id": 24,
+            "name": "Ducks",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg"
+        },
+        {
+            "id": 26,
+            "name": "Kings",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+        },
+        {
+            "id": 29,
+            "name": "Blue Jackets",
+            "logo_url": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
+        }
+    ]
+}
