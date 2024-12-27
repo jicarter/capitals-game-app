@@ -52,12 +52,28 @@ def create_text_image(text, font_path, font_size, image_size, color="white", bg=
         draw.text(((image_size[0] - w) / 2, (image_size[1] - h) / 2), text, font=font, fill=color)
         return ImageTk.PhotoImage(img)
 
+def toggle_fullscreen(event=None):
+    """Toggle full-screen mode."""
+    root = event.widget
+    is_fullscreen = root.attributes("-fullscreen")
+    root.attributes("-fullscreen", not is_fullscreen)
+
+def exit_fullscreen(event=None):
+    """Exit full-screen mode."""
+    root = event.widget
+    root.attributes("-fullscreen", False)
+
 def display_game_gui(game):
     """Display the game details in a GUI optimized for showcasing team logos."""
     root = tk.Tk()
     root.title("Next Capitals Game")
     root.geometry("800x480")  # Set window size to match screen resolution
     root.configure(bg="black")
+
+       # Full-screen mode
+    root.attributes("-fullscreen", True)
+    root.bind("<F11>", toggle_fullscreen)
+    root.bind("<Escape>", exit_fullscreen)
 
     # Paths
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -136,6 +152,11 @@ def display_countdown_gui(days_until_next_season):
     root.title("Season Countdown")
     root.geometry("800x480")  # Set window size to match screen resolution
     root.configure(bg="black")
+
+    # Full-screen mode
+    root.attributes("-fullscreen", True)
+    root.bind("<F11>", toggle_fullscreen)
+    root.bind("<Escape>", exit_fullscreen)
 
     # Paths
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
