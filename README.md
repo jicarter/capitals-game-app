@@ -18,7 +18,8 @@ A Python application that displays the next Washington Capitals game using the N
 - power supply
 - mini hdmi to hdmi adapter
 - micro usb to usb
-
+## API Documentation
+- https://gitlab.com/dword4/nhlapi/-/blob/master/new-api.md
 ## Project Structure
 
 ```
