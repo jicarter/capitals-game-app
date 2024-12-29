@@ -1,6 +1,7 @@
 import requests
 import json
 from datetime import datetime, timezone, timedelta
+import threading
 import time
 
 API_URL = "https://api-web.nhle.com/v1/club-schedule-season/wsh/20242025"
@@ -68,7 +69,7 @@ def fetch_next_game():
 
     return None
 
-def main():
+def update_loop():
     while True:
         next_game = fetch_next_game()
         if next_game:
@@ -78,6 +79,15 @@ def main():
         else:
             print("No upcoming games found.")
         time.sleep(CHECK_INTERVAL)
+
+def main():
+    update_thread = threading.Thread(target=update_loop)
+    update_thread.daemon = True
+    update_thread.start()
+
+    # Keep the main thread alive
+    while True:
+        time.sleep(1)
 
 if __name__ == "__main__":
     main()
