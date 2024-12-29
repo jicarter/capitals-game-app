@@ -11,6 +11,13 @@ A Python application that displays the next Washington Capitals game using the N
 ## Requirements
 - Python 3.7+
 - Libraries: `requests`, `Pillow`, `cairosvg`, `tkinter`
+## Hardware used
+- raspberry pi zero 2 w
+- 128 GB SD card
+- 7 inch display
+- power supply
+- mini hdmi to hdmi adapter
+- micro usb to usb
 
 ## Project Structure
 
